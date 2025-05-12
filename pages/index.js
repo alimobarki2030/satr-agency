@@ -1,0 +1,197 @@
+import { motion } from "framer-motion";
+import { FaBullhorn, FaSearch, FaStore, FaPenNib, FaPalette, FaChartLine } from "react-icons/fa";
+
+const services = [
+  { icon: <FaBullhorn size={28} />, title: "إدارة الحملات الإعلانية", desc: "نقود ظهورك وتحويلك باحتراف عبر قوقل ومنصات التواصل الاجتماعي" },
+  { icon: <FaSearch size={28} />, title: "تحسين محركات البحث", desc: "نرفع ترتيب موقعك في نتائج قوقل لزيادة الظهور والزيارات المستهدفة" },
+  { icon: <FaStore size={28} />, title: "إنشاء المتاجر الإلكترونية", desc: "نؤسس متجرك على سلة، زد، شوبيفاي – بشكل احترافي" },
+  { icon: <FaPenNib size={28} />, title: "كتابة المحتوى", desc: "نكتب نصوصًا تُقنع، تُباع، وتبني الثقة" },
+  { icon: <FaPalette size={28} />, title: "التصميم الإبداعي", desc: "هويات بصرية وصفحات تبهر وتُميزك عن الجميع" },
+  { icon: <FaChartLine size={28} />, title: "تحليل الأداء والتقارير", desc: "نراقب ونقود حملتك باستخدام البيانات والتحسين المستمر" },
+];
+
+const reasons = [
+  {
+    title: "نتائج ملموسة",
+    desc: "93٪ من عملائنا شهدوا تحسنًا واضحًا خلال أول 30 يوم."
+  },
+  {
+    title: "فهم السوق المحلي",
+    desc: "نحن لا نترجم أفكارك… نحن نولدها من الداخل وبلهجة جمهورك."
+  },
+  {
+    title: "خدمات مترابطة",
+    desc: "من المحتوى إلى الإعلانات… نغطي كل ما تحتاجه في مكان واحد."
+  },
+  {
+    title: "هوية وتجربة راقية",
+    desc: "نصنع لك صفحات وهويات لا تُنسى، وتدفع للشراء."
+  }
+];
+
+export default function Home() {
+  return (
+    <>
+      <main className="min-h-screen bg-[#030712] text-white flex flex-col items-center justify-center px-6 relative">
+        <img src="/images/logo.png" alt="شعار وكالة سطر" className="w-32 md:w-40 mb-6" />
+
+        <motion.h1
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl md:text-6xl font-bold text-center max-w-2xl"
+        >
+          من سطر تبدأ الحكاية…
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="mt-6 text-lg md:text-xl text-gray-300 text-center max-w-xl"
+        >
+          وشراكتنا تكتب النجاح.
+        </motion.p>
+
+        <motion.a
+          href="#contact"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          className="mt-10 px-8 py-4 bg-lime-400 text-black font-semibold rounded-full hover:bg-lime-300 transition"
+        >
+          احجز استشارتك المجانية
+        </motion.a>
+
+        <a href="#services" className="absolute bottom-10 animate-bounce text-[#87daca] hover:text-[#6cc0b0] transition">
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+      </main>
+
+      {/* قسم خدماتنا */}
+      <section id="services" className="bg-[#030712] text-white py-24 px-6 md:px-20">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">خدماتنا</h2>
+          <p className="text-gray-400 text-lg">خدمات متكاملة تبني حضورك وتحقق أهدافك.</p>
+        </div>
+
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2, duration: 0.5 }}
+              className="bg-[#111827] rounded-2xl p-8 w-full max-w-sm text-center shadow-lg hover:shadow-xl hover:scale-105 transition"
+            >
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#1f2937] text-[#87daca]">
+                {service.icon}
+              </div>
+              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              <p className="text-white text-sm leading-relaxed">{service.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* قسم لماذا سطر */}
+      <section className="bg-[#030712] text-white py-24 px-6 md:px-20">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">لماذا يختارون سطر؟</h2>
+          <p className="text-gray-400 text-lg">لأننا لا نقدم خدمة… بل نرافقك حتى تصل.</p>
+        </div>
+
+        <div className="flex flex-wrap justify-center items-center gap-6">
+          {reasons.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.2, duration: 0.6 }}
+              className="rounded-2xl p-8 w-[300px] text-center bg-[#87daca] text-white hover:scale-105 transition shadow-md"
+            >
+              <h3 className="text-xl font-semibold mb-2 text-[#030712]">{item.title}</h3>
+              <p className="text-[#030712] text-sm leading-relaxed">{item.desc}</p>
+
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* قسم كيف نُحدث الفرق؟ */}
+<section className="bg-[#030712] text-white py-24 px-6 md:px-20" dir="rtl">
+  <div className="text-center mb-16">
+    <h2 className="text-3xl md:text-5xl font-bold mb-4">كيف نُحدث الفرق؟</h2>
+    <p className="text-gray-400 text-lg">نحن لا نُجمّل الخدمة، بل نغيّر النتيجة.</p>
+  </div>
+
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+    {/* البطاقة الكبيرة على اليمين */}
+    <div className="bg-[#f8fafc] rounded-2xl shadow-xl p-6 text-right">
+      <div className="rounded-xl overflow-hidden mb-4">
+        <img
+          src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43"
+          alt="نمو الأداء"
+          className="w-full h-60 object-cover"
+        />
+      </div>
+      <div className="text-[#030712]">
+        <h3 className="text-xl font-bold mb-2">نتائج تتحقق، مو وعود</h3>
+        <p className="text-sm leading-relaxed">
+          من أول 30 يوم، عميلنا يلاحظ الفرق فعليًا بالتحويلات والتفاعل.
+        </p>
+      </div>
+    </div>
+
+    {/* البطاقتان الجانبيتان */}
+    <div className="grid gap-6">
+
+      {/* البطاقة الثانية */}
+      <div className="flex bg-[#f8fafc] rounded-2xl shadow-md p-4 gap-4 text-right">
+        <div className="w-1/3 rounded-xl overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74"
+            alt="خدمة متكاملة"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="flex-1 text-[#030712]">
+          <h4 className="text-lg font-semibold mb-1">خدمة متكاملة من الألف إلى الياء</h4>
+          <p className="text-sm leading-relaxed">
+            كل اللي تحتاجه في تسويقك… في مسار واحد بين أيدينا.
+          </p>
+        </div>
+      </div>
+
+      {/* البطاقة الثالثة */}
+      <div className="flex bg-[#f8fafc] rounded-2xl shadow-md p-4 gap-4 text-right">
+        <div className="w-1/3 rounded-xl overflow-hidden">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661384118133-8f8b6eef9715"
+            alt="لغة الجمهور"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="flex-1 text-[#030712]">
+          <h4 className="text-lg font-semibold mb-1">نتكلم بلغة جمهورك</h4>
+          <p className="text-sm leading-relaxed">
+            ما نترجم… إحنا نكتب ونصمم ونفكر بلسان العميل.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    </>
+
+  );
+}
