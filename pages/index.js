@@ -206,24 +206,27 @@ export default function Home() {
         </div>
       </section>
 
- <section id="partners" className="bg-[#030712] text-white py-24 px-4">
+<section id="partners" className="bg-[#030712] text-white py-24 px-4 overflow-hidden">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">شركاء النجاح</h2>
           <p className="text-gray-400 text-lg mb-12">نفخر بالتعاون مع علامات مميزة تركنا بصمتنا معها.</p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center justify-center">
-            {partners.map((logo, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1, duration: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white p-4 rounded-xl shadow-md flex items-center justify-center h-24"
-              >
-                <img src={logo} alt={`شعار ${index + 1}`} className="max-h-12 object-contain" />
-              </motion.div>
-            ))}
+          <div className="relative w-full overflow-hidden">
+            <motion.div
+              className="flex gap-10 animate-slide"
+              initial={{ x: 0 }}
+              animate={{ x: "-100%" }}
+              transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+            >
+              {[...partners, ...partners].map((logo, index) => (
+                <div
+                  key={index}
+                  className="min-w-[100px] h-[100px] bg-white rounded-full flex items-center justify-center shadow-md"
+                >
+                  <img src={logo} alt={`شعار ${index + 1}`} className="w-14 h-14 object-contain rounded-full" />
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>
