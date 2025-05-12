@@ -241,6 +241,40 @@ export default function Home() {
         </div>
       </section>
 
+      <footer className="bg-[#0f172a] text-white py-10 px-6">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    
+    {/* الشعار أو الاسم */}
+    <div className="text-xl font-bold text-[#87daca]">سطر</div>
+
+    {/* روابط سريعة */}
+    <div className="flex gap-6 text-sm text-gray-300">
+      <a href="#services" className="hover:text-white transition">الخدمات</a>
+      <a href="#contact" className="hover:text-white transition">تواصل معنا</a>
+      <a href="#about" className="hover:text-white transition">من نحن</a>
+    </div>
+
+    {/* وسائل التواصل (أيقونات) */}
+    <div className="flex gap-4">
+      <a href="#" className="hover:text-[#87daca] transition">
+        <i className="fab fa-twitter"></i>
+      </a>
+      <a href="#" className="hover:text-[#87daca] transition">
+        <i className="fab fa-instagram"></i>
+      </a>
+      <a href="#" className="hover:text-[#87daca] transition">
+        <i className="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+
+  {/* الحقوق */}
+  <div className="mt-8 text-center text-gray-500 text-xs">
+    © {new Date().getFullYear()} جميع الحقوق محفوظة لوكالة سطر
+  </div>
+</footer>
+
+
     </>
   );
 }
