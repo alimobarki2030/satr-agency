@@ -27,6 +27,12 @@ const partners = [
 ];
 
 export default function Home() {
+ const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({ x: [0, -1000], transition: { repeat: Infinity, duration: 20, ease: "linear" } });
+  }, [controls]);
+
   return (
     <>
       <main className="min-h-screen bg-[#030712] text-white flex flex-col items-center justify-center px-6 relative">
@@ -206,17 +212,20 @@ export default function Home() {
         </div>
       </section>
 
-<section id="partners" className="bg-[#030712] text-white py-24 px-4 overflow-hidden">
+ <section id="partners" className="bg-[#030712] text-white py-24 px-4 overflow-hidden">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">شركاء النجاح</h2>
           <p className="text-gray-400 text-lg mb-12">نفخر بالتعاون مع علامات مميزة تركنا بصمتنا معها.</p>
 
           <div className="relative w-full overflow-hidden">
             <motion.div
-              className="flex gap-10 animate-slide"
-              initial={{ x: 0 }}
-              animate={{ x: "-100%" }}
-              transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+              className="flex gap-10 cursor-grab"
+              drag="x"
+              dragConstraints={{ left: -800, right: 0 }}
+              animate={controls}
+              whileTap={{ cursor: "grabbing" }}
+              onHoverStart={() => controls.stop()}
+              onHoverEnd={() => controls.start({ x: [0, -1000], transition: { repeat: Infinity, duration: 20, ease: "linear" } })}
             >
               {[...partners, ...partners].map((logo, index) => (
                 <div
