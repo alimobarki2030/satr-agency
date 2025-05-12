@@ -1,11 +1,21 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { FaBullhorn, FaSearch, FaStore, FaPenNib, FaPalette, FaChartLine } from "react-icons/fa";
+import Head from "next/head";
+
+<Head>
+  <title>سطر - وكالة تسويق رقمي تصنع حضورًا يبيع</title>
+  <meta name="description" content="سطر هي وكالة تسويق رقمي سعودية، نصنع حضورًا رقميًا متكاملًا من المحتوى حتى الإعلانات، ونقودك بنتائج حقيقية." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charSet="UTF-8" />
+</Head>
+
+
 
 const services = [
   { icon: <FaBullhorn size={28} />, title: "إدارة الحملات الإعلانية", desc: "نقود ظهورك وتحويلك باحتراف عبر قوقل ومنصات التواصل الاجتماعي" },
   { icon: <FaSearch size={28} />, title: "تحسين محركات البحث", desc: "نرفع ترتيب موقعك في نتائج قوقل لزيادة الظهور والزيارات المستهدفة" },
-  { icon: <FaStore size={28} />, title: "إنشاء المتاجر الإلكترونية", desc: "نؤسس متجرك على سلة، زد، شوبيفاي – بشكل احترافي" },
+  { icon: <FaStore size={28} />, title: "إنشاء المتاجر الإلكترونية", desc: "نؤسس متجرك على سلة، زد، شوبيفاي - بشكل احترافي" },
   { icon: <FaPenNib size={28} />, title: "كتابة المحتوى", desc: "نكتب نصوصًا تُقنع، تُباع، وتبني الثقة" },
   { icon: <FaPalette size={28} />, title: "التصميم الإبداعي", desc: "هويات بصرية وصفحات تبهر وتُميزك عن الجميع" },
   { icon: <FaChartLine size={28} />, title: "تحليل الأداء والتقارير", desc: "نراقب ونقود حملتك باستخدام البيانات والتحسين المستمر" },
@@ -35,6 +45,8 @@ export default function Home() {
   }, [controls]);
 
   return (
+
+    
     <>
       <main className="min-h-screen bg-[#030712] text-white flex flex-col items-center justify-center px-6 relative">
         <img src="/images/logo.png" alt="شعار وكالة سطر" className="w-32 md:w-40 mb-6" />
