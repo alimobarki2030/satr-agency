@@ -4,11 +4,29 @@ import { FaBullhorn, FaSearch, FaStore, FaPenNib, FaPalette, FaChartLine } from 
 import Head from "next/head";
 
 <Head>
-  <title>سطر - وكالة تسويق رقمي تصنع حضورًا يبيع</title>
+  <title>سطر | وكالة تسويق رقمي تصنع حضورك بنتائج حقيقية</title>
   <meta name="description" content="سطر هي وكالة تسويق رقمي سعودية، نصنع حضورًا رقميًا متكاملًا من المحتوى حتى الإعلانات، ونقودك بنتائج حقيقية." />
+  <meta name="keywords" content="وكالة تسويق رقمي, سطر, تسويق إلكتروني, تصميم هويات, إدارة إعلانات, محتوى عربي, تحسين محركات البحث, خدمات تسويق رقمية في السعودية" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charSet="UTF-8" />
+
+  <meta property="og:title" content="سطر | وكالة تسويق رقمي تصنع حضورك بنتائج حقيقية" />
+  <meta property="og:description" content="سطر وكالة سعودية متخصصة في المحتوى والإعلانات وتحسين الظهور، نقودك بنتائج ملموسة." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://satr.agency" />
+  <meta property="og:image" content="https://satr.agency/images/og-banner.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="سطر | وكالة تسويق رقمي تصنع حضورك بنتائج حقيقية" />
+  <meta name="twitter:description" content="وكالة تسويق رقمي سعودية تقدم خدمات المحتوى، التصميم، الإعلانات، والسيو." />
+  <meta name="twitter:image" content="https://satr.agency/images/og-banner.png" />
+  <meta name="twitter:url" content="https://satr.agency" />
+  <meta name="twitter:site" content="@satragency_" />
+  <meta name="twitter:creator" content="@satragency_" />
 </Head>
+
 
 
 
