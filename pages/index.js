@@ -71,55 +71,66 @@ export default function Home() {
       </main>
 
       {/* قسم خدماتنا */}
-      <section id="services" className="bg-[#030712] text-white py-24 px-6 md:px-20">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">خدماتنا</h2>
-          <p className="text-gray-400 text-lg">خدمات متكاملة تبني حضورك وتحقق أهدافك.</p>
-        </div>
+      {/* قسم خدماتنا */}
+<section id="services" className="bg-[#030712] text-white py-24 px-4">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-5xl font-bold mb-4">خدماتنا</h2>
+      <p className="text-gray-400 text-lg">خدمات متكاملة تبني حضورك وتحقق أهدافك.</p>
+    </div>
 
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 place-items-center">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2, duration: 0.5 }}
-              className="bg-[#111827] rounded-2xl p-8 w-full max-w-sm text-center shadow-lg hover:shadow-xl hover:scale-105 transition"
-            >
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#1f2937] text-[#87daca]">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-white text-sm leading-relaxed">{service.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+    <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+      {services.map((service, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: index * 0.2, duration: 0.5 }}
+          className="bg-[#111827] rounded-2xl p-8 w-full max-w-[320px] h-full text-center shadow-lg hover:shadow-2xl hover:scale-105 transition min-h-[340px] flex flex-col justify-between"
+        >
+          <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#1f2937] text-[#87daca]">
+            {service.icon}
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+            <p className="text-white text-sm leading-relaxed">{service.desc}</p>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
-      {/* قسم لماذا سطر */}
-      <section className="bg-[#030712] text-white py-24 px-6 md:px-20">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">لماذا يختارون سطر؟</h2>
-          <p className="text-gray-400 text-lg">لأننا لا نقدم خدمة… بل نرافقك حتى تصل.</p>
-        </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-6">
-          {reasons.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.2, duration: 0.6 }}
-              className="rounded-2xl p-8 w-[300px] text-center bg-[#87daca] text-white hover:scale-105 transition shadow-md"
-            >
-              <h3 className="text-xl font-semibold mb-2 text-[#030712]">{item.title}</h3>
-              <p className="text-[#030712] text-sm leading-relaxed">{item.desc}</p>
 
-            </motion.div>
-          ))}
-        </div>
-      </section>
+{/* قسم لماذا يختارون سطر */}
+<section className="bg-[#030712] text-white py-24 px-4">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-5xl font-bold mb-4">لماذا يختارون سطر؟</h2>
+      <p className="text-gray-400 text-lg">لأننا لا نقدم خدمة… بل نرافقك حتى تصل.</p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center">
+      {reasons.map((item, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: index * 0.2, duration: 0.6 }}
+          className="rounded-2xl p-8 w-full max-w-[280px] text-center bg-[#111827] text-white hover:scale-105 transition shadow-xl"
+        >
+          <h3 className="text-xl font-semibold mb-2 text-[#87daca]">{item.title}</h3>
+          <p className="text-gray-200 text-sm leading-relaxed">{item.desc}</p>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
 
       {/* قسم كيف نُحدث الفرق؟ */}
 <section className="bg-[#030712] text-white py-24 px-6 md:px-20" dir="rtl">
