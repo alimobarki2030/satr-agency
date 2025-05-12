@@ -130,7 +130,7 @@ export default function Home() {
                 className="w-full h-60 object-cover"
               />
             </div>
-            <div className="text-[#030712]">
+            <div className="text-[#030712] text-right">
               <h3 className="text-xl font-bold mb-2">نتائج تتحقق، مو وعود</h3>
               <p className="text-sm leading-relaxed">
                 من أول 30 يوم، عميلنا يلاحظ الفرق فعليًا بالتحويلات والتفاعل.
@@ -147,7 +147,7 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex-1 text-[#030712]">
+              <div className="flex-1 text-[#030712] text-right">
                 <h4 className="text-lg font-semibold mb-1">خدمة متكاملة من الألف إلى الياء</h4>
                 <p className="text-sm leading-relaxed">
                   كل اللي تحتاجه في تسويقك… في مسار واحد بين أيدينا.
@@ -163,7 +163,7 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex-1 text-[#030712]">
+              <div className="flex-1 text-[#030712] text-right">
                 <h4 className="text-lg font-semibold mb-1">نتكلم بلغة جمهورك</h4>
                 <p className="text-sm leading-relaxed">
                   ما نترجم… إحنا نكتب ونصمم ونفكر بلسان العميل.
@@ -184,7 +184,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div>
+          <div className="text-right">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#87daca]">من نحن</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
               سطر هي وكالة تسويق رقمية تنطلق من عمق السوق المحلي، وتكتب قصص نجاح عملائها سطرًا سطرًا.
