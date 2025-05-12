@@ -17,6 +17,15 @@ const reasons = [
   { title: "هوية وتجربة راقية", desc: "نصنع لك صفحات وهويات لا تُنسى، وتدفع للشراء." }
 ];
 
+const partners = [
+  "/images/logos/logo1.png",
+  "/images/logos/logo2.png",
+  "/images/logos/logo3.png",
+  "/images/logos/logo4.png",
+  "/images/logos/logo5.png",
+  "/images/logos/logo6.png"
+];
+
 export default function Home() {
   return (
     <>
@@ -120,7 +129,7 @@ export default function Home() {
       <section className="bg-[#030712] text-white py-24 px-6 md:px-20">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">كيف نُحدث الفرق؟</h2>
-          <p className="text-gray-400 text-lg">نحن لا نُجمّل الخدمة، بل نغيّر النتيجة.</p>
+          <p className="text-gray-400 text-lg">نقيس، نحسّن، ونقودك بأرقام حقيقية</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -196,6 +205,29 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+ <section id="partners" className="bg-[#030712] text-white py-24 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">شركاء النجاح</h2>
+          <p className="text-gray-400 text-lg mb-12">نفخر بالتعاون مع علامات مميزة تركنا بصمتنا معها.</p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center justify-center">
+            {partners.map((logo, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: index * 0.1, duration: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-white p-4 rounded-xl shadow-md flex items-center justify-center h-24"
+              >
+                <img src={logo} alt={`شعار ${index + 1}`} className="max-h-12 object-contain" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }
