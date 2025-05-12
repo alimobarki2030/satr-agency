@@ -241,7 +241,7 @@ export default function Home() {
         </div>
       </section>
 
-     <footer className="bg-[#0f172a] text-white px-6 pt-12 pb-6 mt-12">
+     <footer className="bg-[#0f172a] text-white px-6 pt-12 pb-6">
   <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-6">
 
     {/* الشعار */}
