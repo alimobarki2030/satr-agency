@@ -139,7 +139,7 @@ export default function Home() {
           </div>
 
           <div className="grid gap-6">
-            <div className="flex bg-[#f8fafc] rounded-2xl shadow-md p-4 gap-4">
+            <div className="flex bg-[#f8fafc] rounded-2xl shadow-md p-4 gap-4 text-right">
               <div className="w-1/3 rounded-xl overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74"
@@ -147,7 +147,7 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex-1 text-[#030712] text-right">
+              <div className="flex-1 text-[#030712]">
                 <h4 className="text-lg font-semibold mb-1">خدمة متكاملة من الألف إلى الياء</h4>
                 <p className="text-sm leading-relaxed">
                   كل اللي تحتاجه في تسويقك… في مسار واحد بين أيدينا.
@@ -155,7 +155,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex bg-[#f8fafc] rounded-2xl shadow-md p-4 gap-4">
+            <div className="flex bg-[#f8fafc] rounded-2xl shadow-md p-4 gap-4 text-right">
               <div className="w-1/3 rounded-xl overflow-hidden">
                 <img
                   src="https://plus.unsplash.com/premium_photo-1661384118133-8f8b6eef9715"
@@ -163,7 +163,7 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex-1 text-[#030712] text-right">
+              <div className="flex-1 text-[#030712]">
                 <h4 className="text-lg font-semibold mb-1">نتكلم بلغة جمهورك</h4>
                 <p className="text-sm leading-relaxed">
                   ما نترجم… إحنا نكتب ونصمم ونفكر بلسان العميل.
