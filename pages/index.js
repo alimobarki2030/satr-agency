@@ -1,7 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { FaBullhorn, FaSearch, FaStore, FaPenNib, FaPalette, FaChartLine } from "react-icons/fa";
-import { motion, useAnimation } from "framer-motion";
 
 const services = [
   { icon: <FaBullhorn size={28} />, title: "إدارة الحملات الإعلانية", desc: "نقود ظهورك وتحويلك باحتراف عبر قوقل ومنصات التواصل الاجتماعي" },
