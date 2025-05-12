@@ -242,7 +242,7 @@ export default function Home() {
       </section>
 
      <footer className="bg-[#0f172a] text-white px-6 pt-12 pb-6 mt-12">
-  <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10 text-right">
+  <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-6">
 
     {/* الشعار */}
     <div>
@@ -250,18 +250,19 @@ export default function Home() {
     </div>
 
     {/* روابط التنقل */}
-    <div className="flex flex-col md:flex-row gap-4 text-gray-300 text-sm justify-center md:justify-end w-full md:w-auto">
+    <div className="flex flex-wrap gap-4 justify-center text-gray-300 text-sm">
       <a href="#about" className="hover:text-white">من نحن</a>
       <a href="#contact" className="hover:text-white">تواصل</a>
       <a href="#services" className="hover:text-white">الخدمات</a>
     </div>
-  </div>
 
-  {/* ✅ الحقوق في منتصف الفوتر دائمًا */}
-  <div className="mt-8 text-center text-gray-500 text-xs">
-    © {new Date().getFullYear()} وكالة سطر – جميع الحقوق محفوظة
+    {/* الحقوق */}
+    <div className="text-xs text-gray-500 mt-4">
+      © {new Date().getFullYear()} وكالة سطر – جميع الحقوق محفوظة
+    </div>
   </div>
 </footer>
+
 
 
 
