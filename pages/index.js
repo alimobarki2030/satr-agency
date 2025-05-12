@@ -199,6 +199,30 @@ export default function Home() {
   </div>
 </section>
 
+{/* قسم من نحن */}
+<section id="about" className="bg-[#030712] text-white py-24 px-4">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    {/* الصورة */}
+    <div className="rounded-2xl overflow-hidden shadow-xl">
+      <img
+        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+        alt="من نحن"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* النص */}
+    <div>
+      <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#87daca]">من نحن</h2>
+      <p className="text-gray-300 text-lg leading-relaxed">
+        سطر هي وكالة تسويق رقمية تنطلق من عمق السوق المحلي، وتكتب قصص نجاح عملائها سطرًا سطرًا.
+        لا نبيع وعودًا… بل نخلق نتائج. بفريق متخصص في المحتوى، والإعلانات، والتصميم، نقدم حلولًا
+        متكاملة تصنع التأثير وتحقق أهدافك التجارية.
+      </p>
+    </div>
+  </div>
+</section>
 
 
 

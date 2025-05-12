@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+build/
+.next/
+.out/
+.vercel/
+
+# misc
+.env
+.env.*.local
+.DS_Store
+Thumbs.db
