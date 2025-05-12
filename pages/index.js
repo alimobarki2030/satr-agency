@@ -51,11 +51,13 @@ export default function Home() {
           احجز استشارتك المجانية
         </motion.a>
 
-        <a href="#services" className="absolute bottom-10 animate-bounce text-[#87daca] hover:text-[#6cc0b0] transition">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </a>
+        <div className="mt-12 flex justify-center animate-bounce">
+          <a href="#services" className="text-[#87daca] hover:text-[#6cc0b0] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
       </main>
 
       {/* قسم خدماتنا */}
