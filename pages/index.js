@@ -14,14 +14,14 @@ import Head from "next/head";
   <meta property="og:description" content="سطر وكالة سعودية متخصصة في المحتوى والإعلانات وتحسين الظهور، نقودك بنتائج ملموسة." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://satr.agency" />
-<meta property="og:image" content="https://lariinaz.com/wp-content/uploads/2025/05/og-banner.png" />
+  <meta property="og:image" content="https://satr.agency/images/og-banner.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="سطر | وكالة تسويق رقمي تصنع حضورك بنتائج حقيقية" />
   <meta name="twitter:description" content="وكالة تسويق رقمي سعودية تقدم خدمات المحتوى، التصميم، الإعلانات، والسيو." />
-  <meta name="twitter:image" content="https://lariinaz.com/wp-content/uploads/2025/05/og-banner.png" />
+  <meta name="twitter:image" content="https://satr.agency/og-banner.png" />
   <meta name="twitter:url" content="https://satr.agency" />
   <meta name="twitter:site" content="@satragency_" />
   <meta name="twitter:creator" content="@satragency_" />
