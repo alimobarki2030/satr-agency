@@ -132,73 +132,61 @@ export default function Home() {
       </section>
 
       {/* قسم لماذا يختارون سطر؟ */}
-      <section className="bg-[#030712] text-white py-24 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">لماذا يختارون سطر؟</h2>
-            <p className="text-gray-400 text-lg">لأننا لا نقدم خدمة… بل نرافقك حتى تصل.</p>
-          </div>
+      <section className="bg-white py-24 px-4 md:px-20">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+      
+      {/* يسار - البطاقة الكبيرة */}
+      <div className="md:col-span-5 bg-white rounded-xl shadow-sm overflow-hidden">
+        <img
+          src="/images/chat-export.png"
+          alt="Paid Advertising"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-xl font-semibold mb-2">Paid Advertising</h3>
+          <p className="text-gray-500 text-sm leading-relaxed">
+            Perhaps far exposed age effects. Now distrusts you her delivered applauded affection out sincerity. As tolerably recommend shameless unfeeling.
+          </p>
+        </div>
+      </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center">
-            {reasons.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
-                className="rounded-2xl p-8 w-full max-w-[280px] text-center bg-[#111827] text-white hover:scale-105 transition shadow-xl"
-              >
-                <h3 className="text-xl font-semibold mb-2 text-[#87daca]">{item.title}</h3>
-                <p className="text-gray-200 text-sm leading-relaxed">{item.desc}</p>
-              </motion.div>
-            ))}
+      {/* يمين - عمود فيه بطاقتين */}
+      <div className="md:col-span-7 flex flex-col gap-6">
+        {/* البطاقة العلوية */}
+        <div className="flex bg-white rounded-xl shadow-sm overflow-hidden">
+          <img
+            src="/images/app-development.png"
+            alt="App Development"
+            className="w-1/3 h-32 object-cover"
+          />
+          <div className="p-4 flex-1 flex flex-col justify-center">
+            <h4 className="text-lg font-semibold mb-1">App Development</h4>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court...
+            </p>
           </div>
         </div>
-      </section>
 
-      {/* قسم كيف نُحدث الفرق؟ */}
-     <section className="bg-[#030712] text-white py-24 px-6 md:px-20">
-  <div className="text-center mb-16">
-    <h2 className="text-3xl md:text-5xl font-bold mb-4">كيف نُحدث الفرق؟</h2>
-    <p className="text-gray-400 text-lg">نقيس، نحسّن، ونقودك بأرقام حقيقية</p>
-  </div>
-
-  <div className="grid lg:grid-cols-2 gap-16 items-center">
-    {/* الصورة الرئيسية */}
-    <div className="rounded-3xl overflow-hidden shadow-2xl">
-      <img
-        src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43"
-        alt="نتائج"
-        className="w-full h-full object-cover"
-      />
-    </div>
-
-    {/* بطاقات المحتوى */}
-    <div className="flex flex-col gap-8 text-right">
-      <div className="bg-[#f8fafc] text-[#030712] rounded-2xl p-6 shadow-md">
-        <h3 className="text-xl font-bold mb-2">نتائج تتحقق، مو وعود</h3>
-        <p className="text-sm leading-relaxed">
-          من أول 30 يوم، عميلنا يلاحظ الفرق فعليًا بالتحويلات والتفاعل.
-        </p>
-      </div>
-
-      <div className="bg-[#f8fafc] text-[#030712] rounded-2xl p-6 shadow-md">
-        <h4 className="text-lg font-semibold mb-2">خدمة متكاملة من الألف إلى الياء</h4>
-        <p className="text-sm leading-relaxed">
-          كل اللي تحتاجه في تسويقك… في مسار واحد بين أيدينا.
-        </p>
-      </div>
-
-      <div className="bg-[#f8fafc] text-[#030712] rounded-2xl p-6 shadow-md">
-        <h4 className="text-lg font-semibold mb-2">نتكلم بلغة جمهورك</h4>
-        <p className="text-sm leading-relaxed">
-          ما نترجم… إحنا نكتب ونصمم ونفكر بلسان العميل.
-        </p>
+        {/* البطاقة السفلية */}
+        <div className="flex bg-white rounded-xl shadow-sm overflow-hidden">
+          <img
+            src="/images/analytics-report.png"
+            alt="Analytics and Reporting"
+            className="w-1/3 h-32 object-cover"
+          />
+          <div className="p-4 flex-1 flex flex-col justify-center">
+            <h4 className="text-lg font-semibold mb-1">Analytics and Reporting</h4>
+            <p className="text-gray-500 text-sm leading-relaxed">
+              When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court...
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
       {/* قسم من نحن */}
