@@ -132,38 +132,39 @@ export default function Home() {
       </section>
 
       {/* قسم لماذا يختارون سطر؟ */}
-      <section className="bg-white py-24 px-4 md:px-20">
-  <div className="max-w-7xl mx-auto">
+      <section className="bg-[#f9fafb] py-24">
+  <div className="max-w-6xl mx-auto px-4">
     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-      
+
       {/* يسار - البطاقة الكبيرة */}
       <div className="md:col-span-5 bg-white rounded-xl shadow-sm overflow-hidden">
         <img
           src="/images/111.png"
-          alt="Paid Advertising"
+          alt="اختبار النص"
           className="w-full h-64 object-cover"
         />
         <div className="p-6">
           <h3 className="text-xl font-semibold mb-2">اختبار النص</h3>
           <p className="text-gray-500 text-sm leading-relaxed">
-            هذا النص تجريبي لبناء المحتوى لاحقا هذا المحتوى تجريبي...
+            هذا النص تجريبي لبناء المحتوى لاحقًا، هذا المحتوى تجريبي فقط.
           </p>
         </div>
       </div>
 
-      {/* يمين - عمود فيه بطاقتين */}
+      {/* يمين - بطاقتين فوق بعض */}
       <div className="md:col-span-7 flex flex-col gap-6">
+        
         {/* البطاقة العلوية */}
         <div className="flex bg-white rounded-xl shadow-sm overflow-hidden">
           <img
             src="/images/222.png"
-            alt="App Development"
+            alt="اختبار النص"
             className="w-1/3 h-32 object-cover"
           />
-          <div className="p-4 flex-1 flex flex-col justify-center">
+          <div className="p-5 flex-1 flex flex-col justify-center">
             <h4 className="text-lg font-semibold mb-1">اختبار النص</h4>
             <p className="text-gray-500 text-sm leading-relaxed">
-              هذا النص تجريبي لبناء المحتوى لاحقا هذا المحتوى تجريبي...
+              هذا النص تجريبي لبناء المحتوى لاحقًا، هذا المحتوى تجريبي فقط.
             </p>
           </div>
         </div>
@@ -172,20 +173,22 @@ export default function Home() {
         <div className="flex bg-white rounded-xl shadow-sm overflow-hidden">
           <img
             src="/images/333.png"
-            alt="Analytics and Reporting"
+            alt="تقرير احصائيات قوقل"
             className="w-1/3 h-32 object-cover"
           />
-          <div className="p-4 flex-1 flex flex-col justify-center">
+          <div className="p-5 flex-1 flex flex-col justify-center">
             <h4 className="text-lg font-semibold mb-1">تقرير احصائيات قوقل</h4>
             <p className="text-gray-500 text-sm leading-relaxed">
-              فريق متكامل من سطر هذا السطر هو سطر تجريبي قابل للتطوير للتعديل لاحقا.
+              فريق متكامل من سطر هذا السطر هو سطر تجريبي قابل للتطوير للتعديل لاحقًا.
             </p>
           </div>
         </div>
+
       </div>
     </div>
   </div>
 </section>
+
 
 
 
