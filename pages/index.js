@@ -158,64 +158,48 @@ export default function Home() {
       </section>
 
       {/* قسم كيف نُحدث الفرق؟ */}
-      <section className="bg-[#030712] text-white py-24 px-6 md:px-20">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">كيف نُحدث الفرق؟</h2>
-          <p className="text-gray-400 text-lg">نقيس، نحسّن، ونقودك بأرقام حقيقية</p>
-        </div>
+     <section className="bg-[#030712] text-white py-24 px-6 md:px-20">
+  <div className="text-center mb-16">
+    <h2 className="text-3xl md:text-5xl font-bold mb-4">كيف نُحدث الفرق؟</h2>
+    <p className="text-gray-400 text-lg">نقيس، نحسّن، ونقودك بأرقام حقيقية</p>
+  </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          <div className="bg-[#f8fafc] rounded-2xl shadow-xl p-6">
-            <div className="rounded-xl overflow-hidden mb-4">
-              <img
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43"
-                alt="نمو الأداء"
-                className="w-full h-60 object-cover"
-              />
-            </div>
-            <div className="text-[#030712] text-right">
-              <h3 className="text-xl font-bold mb-2">نتائج تتحقق، مو وعود</h3>
-              <p className="text-sm leading-relaxed">
-                من أول 30 يوم، عميلنا يلاحظ الفرق فعليًا بالتحويلات والتفاعل.
-              </p>
-            </div>
-          </div>
+  <div className="grid lg:grid-cols-2 gap-16 items-center">
+    {/* الصورة الرئيسية */}
+    <div className="rounded-3xl overflow-hidden shadow-2xl">
+      <img
+        src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43"
+        alt="نتائج"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-          <div className="grid gap-6">
-            <div className="flex bg-[#f8fafc] rounded-2xl shadow-md p-4 gap-4 text-right">
-              <div className="w-1/3 rounded-xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74"
-                  alt="خدمة متكاملة"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex-1 text-[#030712]">
-                <h4 className="text-lg font-semibold mb-1">خدمة متكاملة من الألف إلى الياء</h4>
-                <p className="text-sm leading-relaxed">
-                  كل اللي تحتاجه في تسويقك… في مسار واحد بين أيدينا.
-                </p>
-              </div>
-            </div>
+    {/* بطاقات المحتوى */}
+    <div className="flex flex-col gap-8 text-right">
+      <div className="bg-[#f8fafc] text-[#030712] rounded-2xl p-6 shadow-md">
+        <h3 className="text-xl font-bold mb-2">نتائج تتحقق، مو وعود</h3>
+        <p className="text-sm leading-relaxed">
+          من أول 30 يوم، عميلنا يلاحظ الفرق فعليًا بالتحويلات والتفاعل.
+        </p>
+      </div>
 
-            <div className="flex bg-[#f8fafc] rounded-2xl shadow-md p-4 gap-4 text-right">
-              <div className="w-1/3 rounded-xl overflow-hidden">
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1661384118133-8f8b6eef9715"
-                  alt="لغة الجمهور"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex-1 text-[#030712]">
-                <h4 className="text-lg font-semibold mb-1">نتكلم بلغة جمهورك</h4>
-                <p className="text-sm leading-relaxed">
-                  ما نترجم… إحنا نكتب ونصمم ونفكر بلسان العميل.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="bg-[#f8fafc] text-[#030712] rounded-2xl p-6 shadow-md">
+        <h4 className="text-lg font-semibold mb-2">خدمة متكاملة من الألف إلى الياء</h4>
+        <p className="text-sm leading-relaxed">
+          كل اللي تحتاجه في تسويقك… في مسار واحد بين أيدينا.
+        </p>
+      </div>
+
+      <div className="bg-[#f8fafc] text-[#030712] rounded-2xl p-6 shadow-md">
+        <h4 className="text-lg font-semibold mb-2">نتكلم بلغة جمهورك</h4>
+        <p className="text-sm leading-relaxed">
+          ما نترجم… إحنا نكتب ونصمم ونفكر بلسان العميل.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* قسم من نحن */}
       <section id="about" className="bg-[#030712] text-white py-24 px-4">
