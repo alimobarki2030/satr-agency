@@ -238,32 +238,30 @@ export default function Home() {
 
     <div className="relative w-full overflow-hidden">
       <motion.div
-        className="flex gap-10 cursor-grab"
-        drag="x"
-        dragConstraints={{ left: -800, right: 0 }}
-        animate={controls}
-        whileTap={{ cursor: "grabbing" }}
-        onHoverStart={() => controls.stop()}
-        onHoverEnd={() =>
-          controls.start({
-            x: [0, -1000],
-            transition: { repeat: Infinity, duration: 20, ease: "linear" },
-          })
-        }
-      >
-        {[...partners, ...partners].map((logo, index) => (
-          <div
-            key={index}
-            className="min-w-[100px] h-[100px] bg-white rounded-full overflow-hidden shadow-md"
-          >
-            <img
-              src={logo}
-              alt={`شعار ${index + 1}`}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
-      </motion.div>
+  className="flex gap-10 cursor-grab"
+  animate={{
+    x: ["0%", "-50%"],
+    transition: {
+      repeat: Infinity,
+      repeatType: "loop",
+      duration: 20,
+      ease: "linear"
+    }
+  }}
+>
+  <div className="flex gap-10">
+    {partners.map((logo, index) => (
+      <div key={index} className="min-w-[100px] h-[100px] bg-white rounded-full overflow-hidden shadow-md">
+        <img src={logo} alt={`شعار ${index + 1}`} className="w-full h-full object-cover" />
+      </div>
+    ))}
+    {partners.map((logo, index) => (
+      <div key={`dup-${index}`} className="min-w-[100px] h-[100px] bg-white rounded-full overflow-hidden shadow-md">
+        <img src={logo} alt={`شعار مكرر ${index + 1}`} className="w-full h-full object-cover" />
+      </div>
+    ))}
+  </div>
+</motion.div>
     </div>
   </div>
 </section>
