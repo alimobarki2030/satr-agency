@@ -139,14 +139,14 @@ export default function Home() {
       {/* يسار - البطاقة الكبيرة */}
       <div className="md:col-span-5 bg-white rounded-xl shadow-sm overflow-hidden">
         <img
-          src="/images/chat-export.png"
+          src="/images/111.png"
           alt="Paid Advertising"
           className="w-full h-64 object-cover"
         />
         <div className="p-6">
-          <h3 className="text-xl font-semibold mb-2">Paid Advertising</h3>
+          <h3 className="text-xl font-semibold mb-2">اختبار النص</h3>
           <p className="text-gray-500 text-sm leading-relaxed">
-            Perhaps far exposed age effects. Now distrusts you her delivered applauded affection out sincerity. As tolerably recommend shameless unfeeling.
+            هذا النص تجريبي لبناء المحتوى لاحقا هذا المحتوى تجريبي...
           </p>
         </div>
       </div>
@@ -156,14 +156,14 @@ export default function Home() {
         {/* البطاقة العلوية */}
         <div className="flex bg-white rounded-xl shadow-sm overflow-hidden">
           <img
-            src="/images/app-development.png"
+            src="/images/222.png"
             alt="App Development"
             className="w-1/3 h-32 object-cover"
           />
           <div className="p-4 flex-1 flex flex-col justify-center">
-            <h4 className="text-lg font-semibold mb-1">App Development</h4>
+            <h4 className="text-lg font-semibold mb-1">اختبار النص</h4>
             <p className="text-gray-500 text-sm leading-relaxed">
-              When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court...
+              هذا النص تجريبي لبناء المحتوى لاحقا هذا المحتوى تجريبي...
             </p>
           </div>
         </div>
@@ -171,14 +171,14 @@ export default function Home() {
         {/* البطاقة السفلية */}
         <div className="flex bg-white rounded-xl shadow-sm overflow-hidden">
           <img
-            src="/images/analytics-report.png"
+            src="/images/333.png"
             alt="Analytics and Reporting"
             className="w-1/3 h-32 object-cover"
           />
           <div className="p-4 flex-1 flex flex-col justify-center">
-            <h4 className="text-lg font-semibold mb-1">Analytics and Reporting</h4>
+            <h4 className="text-lg font-semibold mb-1">تقرير احصائيات قوقل</h4>
             <p className="text-gray-500 text-sm leading-relaxed">
-              When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court...
+              فريق متكامل من سطر هذا السطر هو سطر تجريبي قابل للتطوير للتعديل لاحقا.
             </p>
           </div>
         </div>
