@@ -261,6 +261,23 @@ export default function Home() {
   </div>
 </section>
 
+<section id="contact" className="bg-white py-24 px-4" dir="rtl">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-right text-[#030712]">راسلنا مباشرة</h2>
+    <p className="text-gray-600 mb-8 text-right">نرحب باستفساراتك، وسنعود إليك بأقرب وقت.</p>
+
+    <form className="grid gap-6">
+      <input type="text" placeholder="اسمك" className="border border-gray-300 rounded-lg px-4 py-3 w-full text-right" />
+      <input type="email" placeholder="بريدك الإلكتروني" className="border border-gray-300 rounded-lg px-4 py-3 w-full text-right" />
+      <textarea placeholder="رسالتك" rows="5" className="border border-gray-300 rounded-lg px-4 py-3 w-full text-right"></textarea>
+      <button type="submit" className="bg-[#87daca] text-black font-semibold py-3 rounded-lg hover:bg-[#6cc0b0] transition">
+        إرسال
+      </button>
+    </form>
+  </div>
+</section>
+
+
 
 
      <footer className="bg-[#0f172a] text-white px-6 pt-12 pb-6">
