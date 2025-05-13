@@ -132,10 +132,10 @@ export default function Home() {
       </section>
 
       {/* قسم لماذا يختارون سطر؟ */}
-      <section className="bg-[#f9fafb] py-24">
+      <section className="bg-[#f9fafb] py-24" dir="rtl">
   <div className="max-w-6xl mx-auto px-4">
     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-
+      
       {/* يسار - البطاقة الكبيرة */}
       <div className="md:col-span-5 bg-white rounded-xl shadow-sm overflow-hidden">
         <img
@@ -145,15 +145,15 @@ export default function Home() {
         />
         <div className="p-6">
           <h3 className="text-xl font-semibold mb-2">اختبار النص</h3>
-          <p className="text-gray-500 text-sm leading-relaxed">
-            هذا النص تجريبي لبناء المحتوى لاحقًا، هذا المحتوى تجريبي فقط.
+          <p className="text-gray-600 text-sm leading-relaxed">
+            هذا النص تجريبي لبناء المحتوى لاحقًا، هذا المحتوى تجريبي فقط لاختبار الترتيب والشكل العام.
           </p>
         </div>
       </div>
 
       {/* يمين - بطاقتين فوق بعض */}
       <div className="md:col-span-7 flex flex-col gap-6">
-        
+
         {/* البطاقة العلوية */}
         <div className="flex bg-white rounded-xl shadow-sm overflow-hidden">
           <img
@@ -163,8 +163,8 @@ export default function Home() {
           />
           <div className="p-5 flex-1 flex flex-col justify-center">
             <h4 className="text-lg font-semibold mb-1">اختبار النص</h4>
-            <p className="text-gray-500 text-sm leading-relaxed">
-              هذا النص تجريبي لبناء المحتوى لاحقًا، هذا المحتوى تجريبي فقط.
+            <p className="text-gray-600 text-sm leading-relaxed">
+              هذا النص تجريبي لبناء المحتوى لاحقًا، هذا المحتوى تجريبي فقط لاختبار الترتيب والشكل العام.
             </p>
           </div>
         </div>
@@ -178,8 +178,8 @@ export default function Home() {
           />
           <div className="p-5 flex-1 flex flex-col justify-center">
             <h4 className="text-lg font-semibold mb-1">تقرير احصائيات قوقل</h4>
-            <p className="text-gray-500 text-sm leading-relaxed">
-              فريق متكامل من سطر هذا السطر هو سطر تجريبي قابل للتطوير للتعديل لاحقًا.
+            <p className="text-gray-600 text-sm leading-relaxed">
+              فريق متكامل من سطر، هذا السطر هو سطر تجريبي قابل للتطوير والتعديل لاحقًا.
             </p>
           </div>
         </div>
@@ -188,6 +188,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 
 
 
