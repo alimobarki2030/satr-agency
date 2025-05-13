@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* قسم لماذا يختارون سطر؟ */}
-      <section className="bg-[#f9fafb] py-24" dir="rtl">
+      <section className="bg-slate-900 py-24" dir="rtl">
   <div className="max-w-6xl mx-auto px-4">
     <div className="text-center mb-16">
   <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#ffffff]">كيف نُحدث الفرق؟</h2>
@@ -142,7 +142,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
       
       {/* يسار - البطاقة الكبيرة */}
-      <div className="md:col-span-5 bg-slate-900 rounded-xl shadow-sm overflow-hidden flex flex-col">
+      <div className="md:col-span-5 bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
         <img
           src="/images/111.png"
           alt="اختبار النص"
