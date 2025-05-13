@@ -22,11 +22,11 @@ const reasons = [
 
 const partners = [
   "/images/12.png",
-  "/images/logos/logo2.png",
-  "/images/logos/logo3.png",
-  "/images/logos/logo4.png",
-  "/images/logos/logo5.png",
-  "/images/logos/logo6.png"
+  "/images/13.png",
+  "/images/14.png",
+  "/images/15.png",
+  "/images/16.png",
+  "/images/17.png"
 ];
 
 export default function Home() {
