@@ -32,9 +32,16 @@ const partners = [
 export default function Home() {
  const controls = useAnimation();
 
-  useEffect(() => {
-    controls.start({ x: [0, -1000], transition: { repeat: Infinity, duration: 20, ease: "linear" } });
-  }, [controls]);
+ useEffect(() => {
+  controls.start({
+    x: [0, -1000],
+    transition: {
+      repeat: Infinity,
+      duration: 25, // 🔄 تحكم في السرعة (كل ما قل الرقم زادت السرعة)
+      ease: "linear",
+    },
+  });
+}, [controls]);
 
   return (
 
@@ -240,34 +247,33 @@ export default function Home() {
       <motion.div
         className="flex gap-10 cursor-grab"
         drag="x"
-        dragConstraints={{ left: -1000, right: 0 }}
-        animate={{
-          x: ["0%", "-50%"],
-          transition: {
-            duration: 30,
-            repeat: Infinity,
-            ease: "linear",
-          },
-        }}
+        dragConstraints={{ left: -2000, right: 0 }}
+        animate={controls}
         whileTap={{ cursor: "grabbing" }}
-        onMouseEnter={(e) => e.stopPropagation()}
-        onHoverStart={(e) => e.target.style.animationPlayState = 'paused'}
-        onHoverEnd={(e) => e.target.style.animationPlayState = 'running'}
+        onMouseEnter={() => controls.stop()}
+        onMouseLeave={() =>
+          controls.start({
+            x: [0, -1000],
+            transition: {
+              repeat: Infinity,
+              duration: 25,
+              ease: "linear",
+            },
+          })
+        }
       >
-        <div className="flex gap-10">
-          {partners.concat(partners).map((logo, index) => (
-            <div
-              key={index}
-              className="min-w-[100px] h-[100px] bg-white rounded-full overflow-hidden shadow-md"
-            >
-              <img
-                src={logo}
-                alt={`شعار ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ))}
-        </div>
+        {[...partners, ...partners].map((logo, index) => (
+          <div
+            key={index}
+            className="min-w-[100px] h-[100px] bg-white rounded-full overflow-hidden shadow-md"
+          >
+            <img
+              src={logo}
+              alt={`شعار ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
       </motion.div>
     </div>
   </div>
