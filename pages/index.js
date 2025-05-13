@@ -11,7 +11,6 @@ import Head from "next/head";
         <meta name="twitter:url" content="https://www.satr.agency/" />
         <meta name="twitter:site" content="@satragency_" />
         <meta name="twitter:creator" content="@satragency_" />
-
         <meta property="og:title" content="سطر | وكالة تسويق رقمي تصنع حضورك بنتائج حقيقية" />
         <meta property="og:description" content="سطر وكالة سعودية متخصصة في المحتوى والإعلانات وتحسين الظهور، نقودك بنتائج ملموسة." />
         <meta property="og:image" content="https://www.satr.agency/og-banner.png" />
