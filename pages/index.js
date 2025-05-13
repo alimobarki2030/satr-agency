@@ -142,7 +142,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
       
       {/* يسار - البطاقة الكبيرة */}
-      <div className="md:col-span-5 bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
+      <div className="md:col-span-5 bg-slate-900 rounded-xl shadow-sm overflow-hidden flex flex-col">
         <img
           src="/images/111.png"
           alt="اختبار النص"
