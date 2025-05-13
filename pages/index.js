@@ -164,39 +164,45 @@ export default function Home() {
     <p className="text-gray-400 text-lg">نقيس، نحسّن، ونقودك بأرقام حقيقية</p>
   </div>
 
-  <div className="grid lg:grid-cols-3 gap-8">
-    {/* كرت يسار كبير */}
-    <div className="lg:col-span-1 bg-[#111827] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    {/* كرت كبير يسار */}
+    <div className="lg:row-span-2 bg-[#111827] rounded-2xl shadow-md overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43"
         alt="نتائج"
-        className="w-full h-48 object-cover rounded-xl mb-4"
+        className="w-full h-60 object-cover"
       />
-      <h3 className="text-xl font-bold mb-2">نتائج تتحقق، مو وعود</h3>
-      <p className="text-gray-300 text-sm leading-relaxed">
-        من أول 30 يوم، عميلنا يلاحظ الفرق فعليًا بالتحويلات والتفاعل.
-      </p>
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-2">نتائج تتحقق، مو وعود</h3>
+        <p className="text-gray-300 text-sm leading-relaxed">
+          من أول 30 يوم، عميلنا يلاحظ الفرق فعليًا بالتحويلات والتفاعل.
+        </p>
+      </div>
     </div>
 
-    {/* كرتين يمين */}
-    <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
-      <div className="bg-[#111827] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-        <img
-          src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74"
-          alt="خدمة متكاملة"
-          className="w-full h-32 object-cover rounded-xl mb-4"
-        />
+    {/* كرت يمين 1 */}
+    <div className="bg-[#111827] rounded-2xl shadow-md overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74"
+        alt="خدمة متكاملة"
+        className="w-full h-40 object-cover"
+      />
+      <div className="p-6">
         <h4 className="text-lg font-semibold mb-2">خدمة متكاملة من الألف إلى الياء</h4>
         <p className="text-gray-300 text-sm leading-relaxed">
           كل اللي تحتاجه في تسويقك… في مسار واحد بين أيدينا.
         </p>
       </div>
-      <div className="bg-[#111827] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1661384118133-8f8b6eef9715"
-          alt="لغة الجمهور"
-          className="w-full h-32 object-cover rounded-xl mb-4"
-        />
+    </div>
+
+    {/* كرت يمين 2 */}
+    <div className="bg-[#111827] rounded-2xl shadow-md overflow-hidden">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1661384118133-8f8b6eef9715"
+        alt="لغة الجمهور"
+        className="w-full h-40 object-cover"
+      />
+      <div className="p-6">
         <h4 className="text-lg font-semibold mb-2">نتكلم بلغة جمهورك</h4>
         <p className="text-gray-300 text-sm leading-relaxed">
           ما نترجم… إحنا نكتب ونصمم ونفكر بلسان العميل.
@@ -205,6 +211,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 
 
 
