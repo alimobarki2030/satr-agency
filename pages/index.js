@@ -21,7 +21,7 @@ const reasons = [
 ];
 
 const partners = [
-  "/images/logos/logo1.png",
+  "/images/12.png",
   "/images/logos/logo2.png",
   "/images/logos/logo3.png",
   "/images/logos/logo4.png",
