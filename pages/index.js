@@ -158,59 +158,61 @@ export default function Home() {
       </section>
 
       {/* قسم كيف نُحدث الفرق؟ */}
-     <section className="bg-[#030712] text-white py-24 px-6 md:px-20">
+     <section className="bg-[#030712] text-white py-24 px-4 md:px-20">
   <div className="text-center mb-16">
     <h2 className="text-3xl md:text-5xl font-bold mb-4">كيف نُحدث الفرق؟</h2>
     <p className="text-gray-400 text-lg">نقيس، نحسّن، ونقودك بأرقام حقيقية</p>
   </div>
 
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-    {/* كرت كبير يسار */}
-    <div className="lg:row-span-2 bg-[#111827] rounded-2xl shadow-md overflow-hidden">
+  <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+    {/* اليسار الكبير */}
+    <div className="md:col-span-6 bg-[#0f172a] rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between">
       <img
         src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43"
-        alt="نتائج"
-        className="w-full h-60 object-cover"
+        className="w-full h-56 md:h-64 object-cover"
+        alt="تحقيق نتائج"
       />
       <div className="p-6">
         <h3 className="text-xl font-bold mb-2">نتائج تتحقق، مو وعود</h3>
-        <p className="text-gray-300 text-sm leading-relaxed">
+        <p className="text-gray-400 text-sm leading-relaxed">
           من أول 30 يوم، عميلنا يلاحظ الفرق فعليًا بالتحويلات والتفاعل.
         </p>
       </div>
     </div>
 
-    {/* كرت يمين 1 */}
-    <div className="bg-[#111827] rounded-2xl shadow-md overflow-hidden">
-      <img
-        src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74"
-        alt="خدمة متكاملة"
-        className="w-full h-40 object-cover"
-      />
-      <div className="p-6">
-        <h4 className="text-lg font-semibold mb-2">خدمة متكاملة من الألف إلى الياء</h4>
-        <p className="text-gray-300 text-sm leading-relaxed">
-          كل اللي تحتاجه في تسويقك… في مسار واحد بين أيدينا.
-        </p>
+    {/* يمين */}
+    <div className="md:col-span-6 flex flex-col gap-6">
+      <div className="flex bg-[#0f172a] rounded-3xl shadow-sm overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74"
+          className="w-1/3 h-32 object-cover"
+          alt="خدمة متكاملة"
+        />
+        <div className="p-4 flex-1 flex flex-col justify-center">
+          <h4 className="text-lg font-semibold mb-1">خدمة متكاملة من الألف إلى الياء</h4>
+          <p className="text-gray-400 text-sm">
+            كل اللي تحتاجه في تسويقك… في مسار واحد بين أيدينا.
+          </p>
+        </div>
       </div>
-    </div>
 
-    {/* كرت يمين 2 */}
-    <div className="bg-[#111827] rounded-2xl shadow-md overflow-hidden">
-      <img
-        src="https://plus.unsplash.com/premium_photo-1661384118133-8f8b6eef9715"
-        alt="لغة الجمهور"
-        className="w-full h-40 object-cover"
-      />
-      <div className="p-6">
-        <h4 className="text-lg font-semibold mb-2">نتكلم بلغة جمهورك</h4>
-        <p className="text-gray-300 text-sm leading-relaxed">
-          ما نترجم… إحنا نكتب ونصمم ونفكر بلسان العميل.
-        </p>
+      <div className="flex bg-[#0f172a] rounded-3xl shadow-sm overflow-hidden">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661384118133-8f8b6eef9715"
+          className="w-1/3 h-32 object-cover"
+          alt="لغة الجمهور"
+        />
+        <div className="p-4 flex-1 flex flex-col justify-center">
+          <h4 className="text-lg font-semibold mb-1">نتكلم بلغة جمهورك</h4>
+          <p className="text-gray-400 text-sm">
+            ما نترجم… إحنا نكتب ونصمم ونفكر بلسان العميل.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
