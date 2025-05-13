@@ -164,41 +164,48 @@ export default function Home() {
     <p className="text-gray-400 text-lg">نقيس، نحسّن، ونقودك بأرقام حقيقية</p>
   </div>
 
-  <div className="grid lg:grid-cols-2 gap-16 items-center">
-    {/* الصورة الرئيسية */}
-    <div className="rounded-3xl overflow-hidden shadow-2xl">
+  <div className="grid lg:grid-cols-3 gap-8">
+    {/* كرت يسار كبير */}
+    <div className="lg:col-span-1 bg-[#111827] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
       <img
         src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43"
         alt="نتائج"
-        className="w-full h-full object-cover"
+        className="w-full h-48 object-cover rounded-xl mb-4"
       />
+      <h3 className="text-xl font-bold mb-2">نتائج تتحقق، مو وعود</h3>
+      <p className="text-gray-300 text-sm leading-relaxed">
+        من أول 30 يوم، عميلنا يلاحظ الفرق فعليًا بالتحويلات والتفاعل.
+      </p>
     </div>
 
-    {/* بطاقات المحتوى */}
-    <div className="flex flex-col gap-8 text-right">
-      <div className="bg-[#f8fafc] text-[#030712] rounded-2xl p-6 shadow-md">
-        <h3 className="text-xl font-bold mb-2">نتائج تتحقق، مو وعود</h3>
-        <p className="text-sm leading-relaxed">
-          من أول 30 يوم، عميلنا يلاحظ الفرق فعليًا بالتحويلات والتفاعل.
-        </p>
-      </div>
-
-      <div className="bg-[#f8fafc] text-[#030712] rounded-2xl p-6 shadow-md">
+    {/* كرتين يمين */}
+    <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+      <div className="bg-[#111827] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74"
+          alt="خدمة متكاملة"
+          className="w-full h-32 object-cover rounded-xl mb-4"
+        />
         <h4 className="text-lg font-semibold mb-2">خدمة متكاملة من الألف إلى الياء</h4>
-        <p className="text-sm leading-relaxed">
+        <p className="text-gray-300 text-sm leading-relaxed">
           كل اللي تحتاجه في تسويقك… في مسار واحد بين أيدينا.
         </p>
       </div>
-
-      <div className="bg-[#f8fafc] text-[#030712] rounded-2xl p-6 shadow-md">
+      <div className="bg-[#111827] rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661384118133-8f8b6eef9715"
+          alt="لغة الجمهور"
+          className="w-full h-32 object-cover rounded-xl mb-4"
+        />
         <h4 className="text-lg font-semibold mb-2">نتكلم بلغة جمهورك</h4>
-        <p className="text-sm leading-relaxed">
+        <p className="text-gray-300 text-sm leading-relaxed">
           ما نترجم… إحنا نكتب ونصمم ونفكر بلسان العميل.
         </p>
       </div>
     </div>
   </div>
 </section>
+
 
 
       {/* قسم من نحن */}
