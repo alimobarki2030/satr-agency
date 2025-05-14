@@ -5,7 +5,10 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(path.join('content', 'blog'));
+  const files = fs.readdirSync(path.join(process.cwd(), 'content', 'blog'));
+
+  console.log("📂 ملفات في blog/:", files);
+
 
   const posts = files.map((filename) => {
     const slug = filename.replace('.md', '');
@@ -20,9 +23,6 @@ export async function getStaticProps() {
       ...frontmatter,
     };
   });
-
-  console.log("📦 posts loaded:", posts);
-
 
   return {
     props: {
@@ -43,9 +43,6 @@ export default function Blog({ posts }) {
           <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">المدونة</h1>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {posts.length === 0 && (
-              <p className="text-center text-gray-400 col-span-full">لا توجد مقالات حالياً</p>
-            )}
             {posts.map((post, idx) => (
               <div key={idx} className="bg-[#111827] rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
                 <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
