@@ -37,7 +37,7 @@ export default function Document() {
       <body className="bg-[#030712] text-white">
         <Main />
         <NextScript />
-        <Analytics />
+        
       </body>
     </Html>
   );
