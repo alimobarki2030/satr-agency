@@ -130,56 +130,56 @@ const scrollToServices = () => {
       <section className="bg-slate-900 py-24" dir="rtl">
   <div className="max-w-6xl mx-auto px-4">
     <div className="text-center mb-16">
-  <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#ffffff]">كيف نُحدث الفرق؟</h2>
-  <p className="text-gray-500 text-lg">نقيس، نحسّن، ونقودك بأرقام حقيقية</p>
-</div>
+      <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#ffffff]">كيف نُحدث الفرق؟</h2>
+      <p className="text-gray-500 text-lg">نقيس، نحسّن، ونقودك بأرقام حقيقية</p>
+    </div>
 
     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
       
-      {/* يسار - البطاقة الكبيرة */}
+      {/* يسار - تقرير شامل عن الأداء */}
       <div className="md:col-span-5 bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
         <img
           src="/images/111.png"
-          alt="اختبار النص"
+          alt="تقرير أداء Google Search Console"
           className="w-full h-64 object-cover"
         />
         <div className="p-6 flex-1 flex flex-col justify-center">
-          <h3 className="text-xl font-semibold mb-2 text-right">اختبار النص</h3>
+          <h3 className="text-xl font-semibold mb-2 text-right">نتائجك الرقمية في محرك البحث</h3>
           <p className="text-gray-600 text-sm leading-relaxed text-right">
-            هذا النص تجريبي لبناء المحتوى لاحقًا، هذا المحتوى تجريبي فقط لاختبار الترتيب والشكل العام.
+            نقيس عدد النقرات والانطباعات ومعدلات الظهور لتقييم أداءك الحقيقي في Google. نكشف نقاط القوة والفرص للتحسين.
           </p>
         </div>
       </div>
 
-      {/* يمين - البطاقتين بنفس ارتفاع اليسار */}
+      {/* يمين - حاويتان */}
       <div className="md:col-span-7 flex flex-col justify-between gap-6">
 
-        {/* البطاقة العلوية */}
+        {/* البطاقة العلوية - بيانات Google Ads */}
         <div className="flex bg-white rounded-xl shadow-sm overflow-hidden flex-1">
           <div className="p-5 flex-1 flex flex-col justify-center">
-            <h4 className="text-lg font-semibold mb-1 text-right">اختبار النص</h4>
+            <h4 className="text-lg font-semibold mb-1 text-right">تحليل أداء حملات Google</h4>
             <p className="text-gray-600 text-sm leading-relaxed text-right">
-              هذا النص تجريبي لبناء المحتوى لاحقًا، هذا المحتوى تجريبي فقط لاختبار الترتيب والشكل العام.
+              نتابع ظهور إعلاناتك وتكلفتها على مدار الشهور ونقيس الأثر المالي مقابل نتائج التحويل، لتحسين الإنفاق الإعلاني.
             </p>
           </div>
           <img
             src="/images/222.png"
-            alt="اختبار النص"
+            alt="Google Ads Performance"
             className="w-1/3 h-auto object-cover"
           />
         </div>
 
-        {/* البطاقة السفلية */}
+        {/* البطاقة السفلية - لوحة تقارير ROAS */}
         <div className="flex bg-white rounded-xl shadow-sm overflow-hidden flex-1">
           <div className="p-5 flex-1 flex flex-col justify-center">
-            <h4 className="text-lg font-semibold mb-1 text-right">تقرير احصائيات قوقل</h4>
+            <h4 className="text-lg font-semibold mb-1 text-right">تقارير دقيقة لمعدل العائد</h4>
             <p className="text-gray-600 text-sm leading-relaxed text-right">
-              فريق متكامل من سطر، هذا السطر هو سطر تجريبي قابل للتطوير والتعديل لاحقًا.
+              نستعرض مؤشرات مثل ROAS وCPA ومتوسط قيمة الطلب، ونوفر لوحة تحكم تساعدك على اتخاذ قرارات مبنية على أرقام دقيقة.
             </p>
           </div>
           <img
             src="/images/333.png"
-            alt="تقرير احصائيات قوقل"
+            alt="ROAS Dashboard"
             className="w-1/3 h-auto object-cover"
           />
         </div>
@@ -188,6 +188,7 @@ const scrollToServices = () => {
     </div>
   </div>
 </section>
+
 
 
 
