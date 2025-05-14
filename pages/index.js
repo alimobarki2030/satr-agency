@@ -135,67 +135,59 @@ const scrollToServices = () => {
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
-
-      {/* البطاقة الكبيرة */}
-      <div className="md:col-span-5 bg-white rounded-2xl shadow-md overflow-hidden transition-transform hover:scale-[1.02] flex flex-col">
-        <div className="w-full overflow-x-auto">
-          <img
-            src="/images/111.png"
-            alt="نتائج الأداء المالي"
-            className="max-h-[320px] w-auto mx-auto object-contain"
-          />
-        </div>
-        <div className="p-6">
-          <h3 className="text-2xl font-bold mb-3 text-slate-800 text-right">نتائج الأداء المالي</h3>
+      
+      {/* يسار - البطاقة الكبيرة */}
+      <div className="md:col-span-5 bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
+        <img
+          src="/images/111.png"
+          alt="نتائج الأداء المالي"
+          className="w-full h-auto object-contain"
+        />
+        <div className="p-6 flex-1 flex flex-col justify-center">
+          <h3 className="text-xl font-semibold mb-2 text-right">نتائج الأداء المالي</h3>
           <p className="text-gray-600 text-sm leading-relaxed text-right">
             تابع ظهور إعلاناتك وتكلفتها على مدار الشهور وقِس الأثر المالي مقابل نتائج التحويل لتحسين الإنفاق الإعلاني.
           </p>
         </div>
       </div>
 
-      {/* البطاقتين اليمنى */}
-      <div className="md:col-span-7 flex flex-col gap-6">
+      {/* يمين - البطاقتين بنفس ارتفاع اليسار */}
+      <div className="md:col-span-7 flex flex-col justify-between gap-6">
 
         {/* البطاقة العلوية */}
-        <div className="bg-white rounded-2xl shadow-md overflow-hidden transition-transform hover:scale-[1.02] flex flex-col">
-          <div className="p-6">
-            <h4 className="text-2xl font-bold mb-3 text-slate-800 text-right">تحليل محركات البحث</h4>
+        <div className="flex bg-white rounded-xl shadow-sm overflow-hidden flex-1">
+          <div className="p-5 flex-1 flex flex-col justify-center">
+            <h4 className="text-lg font-semibold mb-1 text-right">تحليل محركات البحث</h4>
             <p className="text-gray-600 text-sm leading-relaxed text-right">
               نستعرض مؤشرات مثل ROAS وCPA ومتوسط قيمة الطلب، ونوفر لوحة بيانات تفاعلية تساعدك على اتخاذ قرارات مبنية على أرقام دقيقة.
             </p>
           </div>
-          <div className="w-full overflow-x-auto">
-            <img
-              src="/images/222.png"
-              alt="تحليل محركات البحث"
-              className="max-h-[300px] w-auto mx-auto object-contain"
-            />
-          </div>
+          <img
+            src="/images/222.png"
+            alt="تحليل الحملات"
+            className="w-[200px] h-auto object-contain"
+          />
         </div>
 
         {/* البطاقة السفلية */}
-        <div className="bg-white rounded-2xl shadow-md overflow-hidden transition-transform hover:scale-[1.02] flex flex-col">
-          <div className="p-6">
-            <h4 className="text-2xl font-bold mb-3 text-slate-800 text-right">تحسين محركات البحث</h4>
+        <div className="flex bg-white rounded-xl shadow-sm overflow-hidden flex-1">
+          <div className="p-5 flex-1 flex flex-col justify-center">
+            <h4 className="text-lg font-semibold mb-1 text-right">تحسين محركات البحث</h4>
             <p className="text-gray-600 text-sm leading-relaxed text-right">
               نقيس عدد النقرات والانطباعات ومعدلات الظهور لتقييم أداءك الحقيقي في Google، ونكتشف نقاط القوة والفرص للتحسين.
             </p>
           </div>
-          <div className="w-full overflow-x-auto">
-            <img
-              src="/images/333.png"
-              alt="تحسين محركات البحث"
-              className="max-h-[300px] w-auto mx-auto object-contain"
-            />
-          </div>
+          <img
+            src="/images/333.png"
+            alt="تحسين محركات البحث"
+            className="w-[200px] h-auto object-contain"
+          />
         </div>
 
       </div>
     </div>
   </div>
 </section>
-
-
 
 
 
