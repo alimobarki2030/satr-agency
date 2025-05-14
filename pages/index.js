@@ -1,6 +1,8 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { FaBullhorn, FaSearch, FaStore, FaPenNib, FaPalette, FaChartLine } from "react-icons/fa";
+import { useRef } from "react";
+
 
 
 const services = [
@@ -42,11 +44,17 @@ export default function Home() {
   });
 }, [controls]);
 
+const servicesRef = useRef(null);
+
+const scrollToServices = () => {
+  if (servicesRef.current) {
+    servicesRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+
   return (
-
-    
     <>
-
       <main className="min-h-screen bg-[#030712] text-white flex flex-col items-center justify-center px-6 relative">
         <img src="/images/logo.png" alt="شعار وكالة سطر" className="w-32 md:w-40 mb-6" />
 
@@ -79,16 +87,17 @@ export default function Home() {
         </motion.a>
 
         <div className="mt-12 flex justify-center animate-bounce">
-          <a href="#services" className="text-[#87daca] hover:text-[#6cc0b0] transition">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </a>
-        </div>
+  <button onClick={scrollToServices} className="text-[#87daca] hover:text-[#6cc0b0] transition">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+</div>
+
       </main>
 
       {/* قسم خدماتنا */}
-      <section id="services" className="bg-[#030712] text-white py-24 px-4">
+      <section id="services" ref={servicesRef} className="bg-[#030712] text-white py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">خدماتنا</h2>
