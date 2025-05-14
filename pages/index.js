@@ -127,72 +127,55 @@ const scrollToServices = () => {
       </section>
 
       {/* قسم لماذا يختارون سطر؟ */}
-      <section className="bg-slate-900 py-24" dir="rtl">
-  <div className="max-w-6xl mx-auto px-4">
+     <section className="bg-[#0f172a] py-24" dir="rtl">
+  <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-16">
-      <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">كيف نُحدث الفرق؟</h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">كيف نُحدث الفرق؟</h2>
       <p className="text-gray-400 text-lg">نقيس، نحسّن، ونقودك بأرقام حقيقية</p>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
-      
-      {/* يسار - البطاقة الكبيرة */}
-      <div className="md:col-span-5 bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* تحليل محركات البحث */}
+      <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col">
+        <h3 className="text-xl font-bold mb-3 text-slate-800">تحليل محركات البحث</h3>
+        <p className="text-gray-600 text-sm mb-4">
+          نستعرض مؤشرات مثل ROAS وCPA ومتوسط قيمة الطلب، ونوفر لوحة بيانات تفاعلية تساعدك على اتخاذ قرارات مبنية على أرقام دقيقة.
+        </p>
+        <img
+          src="/images/222.png"
+          alt="تحليل محركات البحث"
+          className="w-full h-auto max-h-[260px] object-contain rounded"
+        />
+      </div>
+
+      {/* تحسين محركات البحث */}
+      <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col">
+        <h3 className="text-xl font-bold mb-3 text-slate-800">تحسين محركات البحث</h3>
+        <p className="text-gray-600 text-sm mb-4">
+          نقيس عدد النقرات والانطباعات ومعدلات الظهور لتقييم أداءك الحقيقي في Google، ونكتشف نقاط القوة والفرص للتحسين.
+        </p>
+        <img
+          src="/images/333.png"
+          alt="تحسين محركات البحث"
+          className="w-full h-auto max-h-[260px] object-contain rounded"
+        />
+      </div>
+
+      {/* نتائج الأداء المالي */}
+      <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col">
+        <h3 className="text-xl font-bold mb-3 text-slate-800">نتائج الأداء المالي</h3>
+        <p className="text-gray-600 text-sm mb-4">
+          تابع ظهور إعلاناتك وتكلفتها على مدار الشهور وقِس الأثر المالي مقابل نتائج التحويل لتحسين الإنفاق الإعلاني.
+        </p>
         <img
           src="/images/111.png"
           alt="نتائج الأداء المالي"
-          className="w-full h-auto object-contain"
+          className="w-full h-auto max-h-[260px] object-contain rounded"
         />
-        <div className="p-6 flex-1 flex flex-col justify-center">
-          <h3 className="text-xl font-semibold mb-2 text-right">نتائج الأداء المالي</h3>
-          <p className="text-gray-600 text-sm leading-relaxed text-right">
-            تابع ظهور إعلاناتك وتكلفتها على مدار الشهور وقِس الأثر المالي مقابل نتائج التحويل لتحسين الإنفاق الإعلاني.
-          </p>
-        </div>
-      </div>
-
-      {/* يمين - البطاقتين بنفس ارتفاع اليسار */}
-      <div className="md:col-span-7 flex flex-col justify-between gap-6">
-
-        {/* البطاقة العلوية */}
-        <div className="flex bg-white rounded-xl shadow-sm overflow-hidden flex-1">
-          <div className="p-5 flex-1 flex flex-col justify-center">
-            <h4 className="text-lg font-semibold mb-1 text-right">تحليل محركات البحث</h4>
-            <p className="text-gray-600 text-sm leading-relaxed text-right">
-              نستعرض مؤشرات مثل ROAS وCPA ومتوسط قيمة الطلب، ونوفر لوحة بيانات تفاعلية تساعدك على اتخاذ قرارات مبنية على أرقام دقيقة.
-            </p>
-          </div>
-          <img
-            src="/images/222.png"
-            alt="تحليل الحملات"
-            className="w-[200px] h-auto object-contain"
-          />
-        </div>
-
-        {/* البطاقة السفلية */}
-        <div className="flex bg-white rounded-xl shadow-sm overflow-hidden flex-1">
-          <div className="p-5 flex-1 flex flex-col justify-center">
-            <h4 className="text-lg font-semibold mb-1 text-right">تحسين محركات البحث</h4>
-            <p className="text-gray-600 text-sm leading-relaxed text-right">
-              نقيس عدد النقرات والانطباعات ومعدلات الظهور لتقييم أداءك الحقيقي في Google، ونكتشف نقاط القوة والفرص للتحسين.
-            </p>
-          </div>
-          <img
-            src="/images/333.png"
-            alt="تحسين محركات البحث"
-            className="w-[200px] h-auto object-contain"
-          />
-        </div>
-
       </div>
     </div>
   </div>
 </section>
-
-
-
-
-
 
 
 
