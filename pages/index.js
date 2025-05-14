@@ -218,22 +218,21 @@ const scrollToServices = () => {
 
     {/* حساب تويتر */}
     <div>
-      <a
-        href="https://x.com/satragency_"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-200 text-sm"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-          className="w-5 h-5"
-        >
-          <path d="M20.39 3H17.6L12.89 9.24 7.86 3H3l6.75 8.62L3 21h3.08l4.92-6.55L16.38 21H21l-7.16-9z"/>
-        </svg>
-        <span>@satragency_</span>
-      </a>
+     <a
+  href="https://x.com/satragency_"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-400 hover:text-white transition-colors duration-200"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    className="w-5 h-5"
+  >
+    <path d="M20.39 3H17.6L12.89 9.24 7.86 3H3l6.75 8.62L3 21h3.08l4.92-6.55L16.38 21H21l-7.16-9z"/>
+  </svg>
+</a>
     </div>
 
     {/* الحقوق */}
