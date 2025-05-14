@@ -261,21 +261,24 @@ export default function Home() {
   </div>
 </section>
 
-<section id="contact" className="bg-white py-24 px-4" dir="rtl">
-  <div className="max-w-4xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-right text-[#030712]">راسلنا مباشرة</h2>
-    <p className="text-gray-600 mb-8 text-right">نرحب باستفساراتك، وسنعود إليك بأقرب وقت.</p>
+<section className="bg-[#f9fafb] py-24" dir="rtl">
+  <div className="max-w-2xl mx-auto px-4 md:px-0 bg-white shadow-xl rounded-xl p-8">
+    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-right text-[#030712]">راسلنا مباشرة</h2>
+    <p className="text-gray-600 mb-8 text-right">
+      نرحب باستفساراتك، وسنعود إليك بأقرب وقت.
+    </p>
 
     <form className="grid gap-6">
-      <input type="text" placeholder="اسمك" className="border border-gray-300 rounded-lg px-4 py-3 w-full text-right" />
-      <input type="email" placeholder="بريدك الإلكتروني" className="border border-gray-300 rounded-lg px-4 py-3 w-full text-right" />
-      <textarea placeholder="رسالتك" rows="5" className="border border-gray-300 rounded-lg px-4 py-3 w-full text-right"></textarea>
+      <input name="name" placeholder="اسمك" className="border border-gray-300 rounded-lg px-4 py-3 w-full text-right" />
+      <input name="email" placeholder="بريدك الإلكتروني" className="border border-gray-300 rounded-lg px-4 py-3 w-full text-right" />
+      <textarea name="message" placeholder="رسالتك" rows="5" className="border border-gray-300 rounded-lg px-4 py-3 w-full text-right"></textarea>
       <button type="submit" className="bg-[#87daca] text-black font-semibold py-3 rounded-lg hover:bg-[#6cc0b0] transition">
         إرسال
       </button>
     </form>
   </div>
 </section>
+
 
 
 
